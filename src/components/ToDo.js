@@ -3,9 +3,10 @@ import React, { Component } from 'react';
 class ToDo extends Component {
   render() {
     return (
-      <div>
-      <li>a todo will go here</li>
-      </div>
+      <li>
+    <input type="checkbox" checked={ this.props.isCompleted } />
+    <span>{ this.props.description }</span>
+      </li>
     );
   }
 }
